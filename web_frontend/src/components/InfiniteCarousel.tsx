@@ -11,7 +11,9 @@ const sentences = [
     "ABSTRACT - Bktherula",
     "L$D - A$AP Rocky",
     "Hate Cult Ritual - Whitechapel",
-    "Elitist Ones - Whitechapel"
+    "Elitist Ones - Whitechapel",
+    "All Alone - Freddie Dredd",
+    "Missing Man - James Blake & Lil Yachty",
 ];
 
 const InfiniteCarousel = () => {
