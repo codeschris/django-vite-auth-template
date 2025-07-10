@@ -3,3 +3,7 @@ lib/
 *.cfg
 *.TAG
 *.pyc
+.idea/
+.vscode/
+*.log
+.DS_Store
