@@ -1,14 +1,17 @@
 const sentences = [
-    "The quick brown fox jumps over the lazy dog.",
-    "Welcome to our amazing platform!",
-    "Stay productive, stay inspired.",
-    "Great things never come from comfort zones.",
-    "Innovation distinguishes between a leader and a follower.",
-    "Work hard in silence, let your success be your noise.",
-    "Dream it. Wish it. Do it.",
-    "Every day is a fresh start.",
-    "Believe you can and you're halfway there.",
-    "Push yourself, because no one else is going to do it for you.",
+    "B.ZERO - HAARPER.",
+    "TRIGGERING ANOTHER MANIC EPISODE FROM RAMPANT DRUG ABUSE - Holoblack, Jon T",
+    "C4 - HAARPER",
+    "Like This (feat. Lil Uzi Vert, Destroy Lonely) - Ken Carson",
+    "Za Kimotho - Wakadinali",
+    "Naliya - Batundi, Msaki, TRESOR",
+    "Pain Remains I, II & III - Lorna Shore",
+    "The Way - Bktherula",
+    "Bossier City Kidnap Victims - $uicideboy$",
+    "ABSTRACT - Bktherula",
+    "L$D - A$AP Rocky",
+    "Hate Cult Ritual - Whitechapel",
+    "Elitist Ones - Whitechapel"
 ];
 
 const InfiniteCarousel = () => {

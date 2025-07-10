@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div className="min-h-screen flex flex-col justify-between">
-            {/* Top Carousel */}
             <InfiniteCarousel />
 
-            {/* Center Content */}
             <div className="p-10 border-1 md:w-1/2 md:mx-auto mx-4 my-10 bg-white shadow-lg rounded-lg flex flex-col items-center justify-center">
                 <div className="flex-1 flex flex-col items-center justify-center">
                     <h1 className="text-2xl font-bold">@codeschris (GitHub) / dice (gamertag) developed this for this specific occasion</h1>
@@ -28,7 +26,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Bottom Carousel */}
             <InfiniteCarousel />
         </div>
     );
