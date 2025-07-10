@@ -12,10 +12,28 @@ from drf_spectacular.utils import extend_schema, OpenApiParameter, OpenApiExampl
 from drf_spectacular.types import OpenApiTypes
 
 @extend_schema(tags=['Authentication'])
-
 class AuthViewSet(viewsets.ViewSet):
     permission_classes = [AllowAny]
 
+    @extend_schema(
+        request=OpenApiTypes.OBJECT,
+        responses={
+            200: OpenApiTypes.OBJECT,
+            400: OpenApiTypes.OBJECT,
+        },
+        examples=[
+            OpenApiExample(
+                'Valid registration',
+                value={'username': 'johnexample', 'email': 'john@example.com', 'password': 'secret', 'first_name': 'John', 'last_name': 'Doe'},
+                request_only=True
+            ),
+            OpenApiExample(
+                'Success response',
+                value={'id': 1, 'username': 'johnexample', 'email': 'john@example.com'},
+                response_only=True
+            ),
+        ]
+    )
     @action(detail=False, methods=['post'])
     def register(self, request):
         serializer = UserSerializer(data=request.data)
@@ -34,12 +52,12 @@ class AuthViewSet(viewsets.ViewSet):
         examples=[
             OpenApiExample(
                 'Valid credentials',
-                value={'username': 'john', 'password': 'secret'},
+                value={'username': 'johnexample', 'password': 'secret'},
                 request_only=True
             ),
             OpenApiExample(
                 'Success response',
-                value={'id': 1, 'username': 'john', 'email': 'john@example.com'},
+                value={'id': 1, 'username': 'johnexample', 'email': 'john@example.com'},
                 response_only=True
             ),
         ]
