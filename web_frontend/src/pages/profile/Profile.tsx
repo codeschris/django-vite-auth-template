@@ -52,11 +52,12 @@ const Home = () => {
 
             <main className="flex flex-col md:flex-row px-4 py-8 gap-8">
                 <div className="md:w-1/3 sticky top-8 self-start">
-                    <div className="w-full bg-white shadow-md rounded-2xl p-8 text-center">
+                    <div className="w-full bg-white shadow-md rounded-2xl p-8 text-left">
                         <h2 className="text-2xl font-extrabold text-gray-800">
                             {user.first_name} {user.last_name} (@{user.username})
                         </h2>
-                        <p className="text-gray-600 mt-2">Email: {user.email}</p>
+                        <p className="text-gray-600 mt-2"><span className="font-black">Email</span>: {user.email}</p>
+                        <p className="text-gray-600 mt-2"><span className="font-black">Bio</span>: {user.bio || "No bio available"}</p>
 
                         <div className="mt-6">
                             <button

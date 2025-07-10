@@ -12,9 +12,12 @@ const Register = () => {
         username: '',
         email: '',
         password: '',
+        bio: '',
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         setFormData((prev) => ({
             ...prev,
             [e.target.name]: e.target.value,
@@ -72,6 +75,17 @@ const Register = () => {
                             name="username"
                             id="username"
                             value={formData.username}
+                            onChange={handleChange}
+                            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="bio" className="block text-gray-700 mb-1">Bio</label>
+                        <textarea
+                            name="bio"
+                            id="bio"
+                            value={formData.bio}
                             onChange={handleChange}
                             className="w-full px-4 py-2 border rounded focus:outline-none focus:ring"
                             required
